@@ -7,7 +7,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract RollerToken is ERC20, Ownable {
   uint constant maxTotalSupply = 1000000;
   uint constant initialMint = 100000;
-  address initialOwner = owner();
 
   constructor(address[] memory initialAddresses)
       ERC20("RollerToken", "RTK")
